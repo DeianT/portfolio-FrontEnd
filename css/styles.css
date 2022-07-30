@@ -15,3 +15,13 @@ img{
     max-width: 120rem;
     margin: 0 auto;
 }
+
+/* Header/nav */
+nav a{
+    text-decoration: none;
+}
+
+/* Presentación */
+.nombre{
+    font-size: 3rem;
+}
