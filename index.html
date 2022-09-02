@@ -4,41 +4,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/597bca7fc7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <a href="">Acerca de</a>
-            <a href="">Experiencia</a>
-            <a href="">Educación</a>
-            <a href="">Proyectos</a>
-        </nav>
-    </header>
+        <div class="barra">
+            <a href="/" class="logo"><img src="" alt="logo"></a>
 
-    <main class="">
-        <img src="" alt="" class="foto-perfil">
-        <h1 class="nombre">Deian Teze</h1>
-        <p class="acerca-de">hflk</p>
+            <a href="#nav" id="mobile-menu"><i class="fas fa-ellipsis-v"></i></a>
+            <nav id="nav" class="navegacion-principal">
+                <a href="#presentacion">Acerca de</a>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#educacion">Educación</a>
+                <a href="" class="navegacion">Proyectos</a>
+                <a href="#" id="cerrar"><i class="fas fa-times"></i></a>
+            </nav>
+        </div>
+        <div class="banner"></div>
+    </header>
+    
+    <a href="#" class="fijo"><i class="fas fa-arrow-up"></i></a>
+
+    <main class="presentacion" id="presentacion">
+        <img src="img/Bidoof.png" alt="" class="foto-perfil">
+        
+        <div class="descripcion">
+            <h1 class="nombre">Deian Teze</h1>
+            <p class="acerca-de">hflk</p>
+        </div>
     </main><!--Main-->
 
-    <section class="contenedor experiencia">
+    <section class="contenedor seccion-exp" id="experiencia">
+        <h2>Experiencia</h2>
 
+        <div class="experiencia">
+            <h3 class="exp-nombre">Trabajo de ejemplo</h3>
+            <p class="fecha">1999 - 2099</p>
+            <p class="exp-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu mi tristique, cursus arcu at, euismod felis. Maecenas vel elit elementum, fringilla ex eget, molestie leo. Donec commodo eu urna non malesuada. Pellentesque vehicula quam et sodales laoreet. Fusce lobortis est a enim eleifend sollicitudin. Phasellus ac lorem ac mauris rutrum interdum.</p>
+        </div>
+        
+        <div class="experiencia">
+            <h3 class="exp-nombre">Trabajo de ejemplo</h3>
+            <p class="fecha">1999 - 2099</p>
+            <p class="exp-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu mi tristique, cursus arcu at, euismod felis. Maecenas vel elit elementum, fringilla ex eget, molestie leo. Donec commodo eu urna non malesuada. Pellentesque vehicula quam et sodales laoreet. Fusce lobortis est a enim eleifend sollicitudin. Phasellus ac lorem ac mauris rutrum interdum.</p>
+        </div>
     </section><!--Experiencia-->
 
-    <section class="contenedor educacion">
-        
+    <section class="contenedor" id="educacion">
+        <h2>Educación</h2>
+
+        <div class="educacion">
+            <h3 class="exp-nombre">Educación secundaria</h3>
+            <p class="fecha">2016 - 2021</p>
+            <p class="exp-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu mi tristique, cursus arcu at, euismod felis. Maecenas vel elit elementum, fringilla ex eget, molestie leo. Donec commodo eu urna non malesuada. Pellentesque vehicula quam et sodales laoreet. Fusce lobortis est a enim eleifend sollicitudin. Phasellus ac lorem ac mauris rutrum interdum.</p>
+        </div>
     </section><!--Educacion-->
 
-    <section class="contenedor proyectos">
-        
+    <section class="contenedor">
+        <h2>Proyectos</h2>
+
+        <div class="proyectos">
+            <div class="proyecto">
+                <a href="/">
+                    <img src="img/Bidoof.png" alt="Img-Proyecto" class="imagen-proyecto">
+                    <h3 class="proyecto-nombre">Proyecto de ejemplo</h3>
+                    <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu mi tristique, cursus arcu at, euismod felis. Maecenas vel elit elementum, fringilla ex eget, molestie leo. Donec commodo eu urna non malesuada. Pellentesque vehicula quam et sodales laoreet. Fusce lobortis est a enim eleifend sollicitudin. Phasellus ac lorem ac mauris rutrum interdum.</p>
+                </a>
+            </div>
+            <div class="proyecto">
+                bienes raices
+                ¿juegos unity?
+                ¿blog cafe?
+                boton ver todos
+            </div>
+        </div>
     </section><!--Proyectos-->
 
-    <footer>
-        <nav class="navegacion">
-
-        </nav>
+    <footer class="">
+        <div class="contenedor ">
+            <nav class="nav-footer">
+                <a href="#">Volver al inicio</a>
+                <a href="#presentacion">Acerca de</a>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#educacion">Educación</a>
+                <a href="">Proyectos</a>
+            </nav>
+            <p>Todos los derechos reservados &copy;</p>
+        </div>
     </footer>
+    <script src="/output/app.js"></script>
 </body>
 </html>
