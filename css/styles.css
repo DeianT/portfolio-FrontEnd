@@ -115,6 +115,11 @@ nav a{
     margin-top: 2rem;
     padding: 0 1rem;
     background-color: darkgray;
+    background: rgb(170,164,151);
+    background: -moz-linear-gradient(135deg, rgba(170,164,151,1) 17%, rgba(209,207,196,1) 92%);
+    background: -webkit-linear-gradient(135deg, rgba(170,164,151,1) 17%, rgba(209,207,196,1) 92%);
+    background: linear-gradient(135deg, rgba(170,164,151,1) 17%, rgba(209,207,196,1) 92%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#aaa497",endColorstr="#d1cfc4",GradientType=1);
 }
 
 .foto-perfil{
@@ -140,11 +145,38 @@ nav a{
 @media (min-width: 768px) {
     .presentacion{
         margin: 0;
-        padding: 0 2rem;
+        padding: 1rem 2rem 0;
     }
     .descripcion{
         position: relative;
         bottom: 7rem;
+    }
+}
+
+/* Contacto */
+.contacto{
+    padding: 2rem 2rem 0.5rem;
+}
+.contacto ul{
+    list-style: none;
+    padding-left: 1rem;
+}
+.contacto li{
+    font-size: 2.2rem;
+    margin-top: 2rem;
+}
+.contacto a{
+    color: black;
+}
+.contacto i{
+    margin-right: 1rem;
+}
+
+
+@media (min-width: 768px) {
+    .contacto li{
+        display: inline-block;
+        margin-right: 2rem;
     }
 }
 
